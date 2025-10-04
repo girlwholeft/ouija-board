@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Multiplayer Ouija (Cyrillic)</title>
+
+  <!-- Google Font that supports Cyrillic (e.g., Roboto, PT Sans) -->
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Доска Спиритической Игры</h1>
+      <div class="meta">
+        <label>Имя: <input id="name" placeholder="Ваше имя" /></label>
+        <button id="joinBtn">Присоединиться</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="boardWrapper">
+        <div id="board">
+          <!-- letters will be injected -->
+        </div>
+        <div id="planchette" title="Planchette">✦</div>
+      </section>
+
+      <aside id="side">
+        <div id="presence"><strong>Игроки</strong><ul></ul></div>
+        <div id="typed"><strong>Сообщение</strong><div id="messageBox"></div></div>
+
+        <div id="keyboard">
+          <strong>Кириллическая клавиатура</strong>
+          <div id="keys"></div>
+        </div>
+
+        <div id="controls">
+          <button id="acquire">Взять указатель</button>
+          <button id="release">Отпустить</button>
+          <button id="clearMsg">Очистить</button>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/client.js"></script>
+</body>
+</html>

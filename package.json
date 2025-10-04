@@ -1,0 +1,25 @@
+{
+  "name": "ouija-board",
+  "version": "1.0.0",
+  "description": "Multiplayer Ouija board with Cyrillic script support",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2"
+  },
+  "engines": {
+    "node": ">=18.x"
+  },
+  "keywords": [
+    "ouija",
+    "multiplayer",
+    "cyrillic",
+    "socket.io"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
